@@ -1,0 +1,1328 @@
+    <div class="body to-page">
+        <h1 class="apply-header">$!{insurant.company.companyName}入职申请表</h1>
+        <div class="split-div">
+            <div class="s-left">
+                <p class="tips">* 请用正楷仔细填写 *</p>
+                <h5 class="h5-label">职位申请</h5>
+                <table class="w470">
+                    <colgroup>
+                        <col class="w50"/>
+                        <col class="w50"/>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>第一选择</p>
+                                    <p class="h14"></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>第二选择</p>
+                                    <p class="h14"></p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>要求薪金</p>
+                                    <p class="h14"></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>可上班日期</p>
+                                    <p class="h14"></p>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="s-right">
+                <span class="header-img">请贴近照</span>
+            </div>
+        </div>
+
+        <div class="block">
+            <h5 class="h5-label">个人信息</h5>
+            <div align="center" class="nopadding">
+                <table border="1" cellspacing="0" cellpadding="0" style="">
+                    <tbody>
+                      <tr>
+                        <td width="183"  valign="top" style="border:solid windowtext 1.0pt;">
+                          <p align="left">
+                              <span style="font-size:12px;font-family:宋体;">姓名 </span><span style="font-size:12px;"></span>
+                          </p>
+                        </td>
+                        <td width="193" valign="top" style="border:solid windowtext 1.0pt;" colspan="3">
+                          <p>
+                              <span style="font-size:12px;">$!insurant.insurantName</span>
+                          </p>
+                        </td>
+                        <td width="328"  valign="top" style="border:solid windowtext 1.0pt;">
+                          <p>
+                              <span style="font-size:12px;font-family:宋体;">手机号码</span><span style="font-size:12px;"> </span>
+                          </p>
+                        </td>
+                        <td width="328" valign="top" style="border:solid windowtext 1.0pt;" colspan="3">
+                          <p>
+                              <span style="font-size:12px;font-family:宋体;">$!insurant.insurantContact</span><span style="font-size:12px;"> </span>
+                          </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="183" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:12px;font-family:宋体;">性别 </span><span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                        <td width="183" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:12px;font-family:宋体;">#if ($!insurant.sexFlag) 女 #else 男 #end</span><span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                        <td width="192"  valign="top" style="border:solid windowtext 1.0pt;">
+                            <p align="left">
+                                <span style="font-size:12px;font-family:宋体;">出生日期 </span><span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                        <td width="192" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p align="left">
+                                <span style="font-size:12px;font-family:宋体;">$!dateUtil.formatDateShort($!insurant.birthDate)</span><span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                        <td width="328" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:12px;font-family:宋体;">联系电话</span><span style="font-size:12px;">(</span><span style="font-size:12px;font-family:宋体;">固定</span><span style="font-size:12px;">)</span>
+                            </p>
+                        </td>
+                        <td width="328"  valign="top" style="border:solid windowtext 1.0pt;" colspan="3">
+                            <p>
+                                <span style="font-size:12px;font-family:宋体;"></span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="183" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:12px;font-family:宋体;">籍贯</span><span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                        <td width="183" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                        <td width="192"  valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:12px;font-family:宋体;">民族</span>
+                            </p>
+                        </td>
+                        <td width="192"  valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                        <td width="328" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:12px;font-family:宋体;">身份证号码 </span><span style="font-size:12px;"> </span>
+                            </p>
+                        </td>
+                         <td width="328" valign="top" style="border:solid windowtext 1.0pt;" colspan="3">
+                            <p>
+                                <span style="font-size:12px;">$!insurant.idCard</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="291" colspan="1" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:12px;font-family:宋体;">电子信箱</span><span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                         <td width="291" colspan="2" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                               <span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                        <td width="167"  valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:12px;font-family:宋体;">您接受倒班工作吗？</span><span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                        <td width="74" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p align="left">
+                                <span style="font-size:12px;font-family:Wingdings;">q </span><span style="font-size:12px;font-family:宋体;">是</span><span style="font-size:12px;"></span>
+                            </p>
+                            <p>
+                                <span style="font-size:12px;font-family:Wingdings;">q</span><span style="font-size:12px;">&nbsp; </span><span style="font-size:12px;font-family:宋体;">否</span><span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                        <td width="95" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:12px;font-family:宋体;">周末工作？</span><span style="font-size:12px;">&nbsp;&nbsp; </span>
+                            </p>
+                        </td>
+                        <td width="78" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p align="left">
+                                <span style="font-size:12px;font-family:Wingdings;">q</span><span style="font-size:12px;"> Yes</span><span style="font-size:12px;font-family:宋体;">是</span><span style="font-size:12px;"></span>
+                            </p>
+                            <p align="left">
+                                <span style="font-size:12px;font-family:Wingdings;">q</span><span style="font-size:12px;"> </span><span style="font-size:12px;">No </span><span style="font-size:12px;font-family:宋体;">否</span><span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="704" colspan="14" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:12px;font-family:宋体;">家庭住址</span><span style="font-size:12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size:12px;font-family:宋体;">&nbsp;邮政编码</span><span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="704" colspan="14" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:12px;font-family:宋体;">户口所在地址</span><span style="font-size:12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:12px;font-family:宋体;">邮政编码</span><span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="160" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:12px;font-family:宋体;">是否党团员</span><span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                        <td width="120" colspan="2" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:12px;font-family:宋体;">身高</span>
+                            </p>
+                        </td>
+                        <td width="120"  valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:12px;font-family:宋体;">体重</span><span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                        <td width="132" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p align="left">
+                                <span style="font-size:12px;font-family:宋体;">视力</span><span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                        <td width="83" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p align="left">
+                                <span style="font-size:12px;font-family:宋体;">是否吸烟</span><span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                        <td width="89"  valign="top" style="border:solid windowtext 1.0pt;">
+                            <p align="left">
+                                <span style="font-size:12px;font-family:Wingdings;">q</span><span style="font-size:12px;"> Yes</span><span style="font-size:12px;font-family:宋体;">是</span><span style="font-size:12px;"></span>
+                            </p>
+                            <p align="left">
+                                <span style="font-size:12px;font-family:Wingdings;">q</span><span style="font-size:12px;"> No </span><span style="font-size:12px;font-family:宋体;">否</span><span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="704" colspan="14" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:12px;">&nbsp;</span><span style="font-size:12px;font-family:宋体;">您是否有亲属在本单位或本集团其他单位工作？（答案不会影响您为我们工作）</span><span style="font-size:12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:12px;font-family:Wingdings;">q </span><span style="font-size:12px;font-family:宋体;">是</span><span style="font-size:12px;">&nbsp;&nbsp;&nbsp; </span><span style="font-size:12px;font-family:Wingdings;">q</span><span style="font-size:12px;">&nbsp; </span><span style="font-size:12px;font-family:宋体;">否</span><span style="font-size:12px;"></span>
+                            </p>
+                            <p>
+                                <span style="font-size:12px;">&nbsp;</span><span style="font-size:12px;font-family:宋体;">如果是，请详细说明</span><span style="font-size:12px;">:</span>
+                            </p>
+                            <p>
+                                <span style="font-size:12px;">&nbsp;</span><span style="font-size:12px;font-family:宋体;">单位名称</span><span style="font-size:12px;">______________________________&nbsp; </span><span style="font-size:12px;font-family:宋体;">部门</span><span style="font-size:12px;">_________________ </span><span style="font-size:12px;font-family:宋体;">职位</span><span style="font-size:12px;">____________________</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="279" colspan="4" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:12px;font-family:宋体;">您是否需要提供住宿？</span><span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                        <td width="425" colspan="10" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:12px;font-family:Wingdings;">q</span><span style="font-size:12px;"> </span><span style="font-size:12px;font-family:宋体;">是</span><span style="font-size:12px;">&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;</span>
+                            </p>
+                            <p>
+                                <span style="font-size:12px;font-family:Wingdings;">q</span><span style="font-size:12px;"> </span><span style="font-size:12px;font-family:宋体;">否</span><span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="704" colspan="14" valign="top" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:12px;font-family:宋体;">业余爱好及特长</span><span style="font-size:12px;"></span>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+      </div>
+      <div class="block to-page pd5">
+        <h5 class="h5-label">受雇记录</h5>
+        <p>下列表格，以现任或最近之职位开始，包括全职、兼职及实习的经历，请一并填写</p>
+        <table border="1" cellspacing="0" cellpadding="0" style="">
+            <tbody>
+            <tr>
+                <td width="259" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:8.0pt;font-family:宋体;">受雇公司名称及地址</span><span style="font-size:8.0pt;"></span>
+                    </p>
+                </td>
+                <td width="84" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:8.0pt;font-family:宋体;">由</span><span style="font-size:8.0pt;"></span>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:8.0pt;font-family:宋体;">至</span><span style="font-size:8.0pt;"></span>
+                    </p>
+                </td>
+                <td width="132" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:8.0pt;font-family:宋体;">首任及离职时所任职位</span><span style="font-size:8.0pt;"></span>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:8.0pt;font-family:宋体;">税前月薪</span><span style="font-size:8.0pt;"></span>
+                    </p>
+                </td>
+                <td width="93" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:8.0pt;font-family:宋体;">离职原因</span><span style="font-size:8.0pt;"></span>
+                    </p>
+                </td>
+            </tr>
+            <tr  class="pd5">
+                <td width="259" style="border:solid windowtext 1.0pt;">
+                    <p align="left">
+                        <i><span style="font-size:12px;">&nbsp;1</span></i><i><span style="font-size:12px;font-family:宋体;">公司：</span></i><i><span style="font-size:12px;"></span></i>
+                    </p>
+                </td>
+                <td width="84" style="border:solid windowtext 1.0pt;" >
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:12px;color:gray;"></span><span style="font-size:12px;">/<span style="color:gray;"></span></span>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:12px;color:gray;"></span><span style="font-size:12px;">/<span style="color:gray;"></span></span>
+                    </p>
+                </td>
+                <td width="132" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+                <td width="93" rowspan="2" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+            </tr>
+            <tr  class="pd5">
+                <td width="259" style="border:solid windowtext 1.0pt;">
+                    <p align="left">
+                        <i><span style="font-size:12px;">&nbsp;1</span></i><i><span style="font-size:12px;font-family:宋体;">地址：</span></i><i><span style="font-size:12px;"></span></i>
+                    </p>
+                </td>
+                <td width="84" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:12px;color:gray;"></span><span style="font-size:12px;">/<span style="color:gray;"></span></span>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:12px;color:gray;"></span><span style="font-size:12px;">/<span style="color:gray;"></span></span>
+                    </p>
+                </td>
+                <td width="132" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+            </tr>
+            <tr  class="pd5">
+                <td width="259" style="border:solid windowtext 1.0pt;">
+                    <p align="left">
+                        <i><span style="font-size:12px;">&nbsp;2</span></i><i><span style="font-size:12px;font-family:宋体;">公司：</span></i><i><span style="font-size:12px;"></span></i>
+                    </p>
+                </td>
+                <td width="84" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:12px;color:gray;"></span><span style="font-size:12px;">/<span style="color:gray;"></span></span>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:12px;color:gray;"></span><span style="font-size:12px;">/<span style="color:gray;"></span></span>
+                    </p>
+                </td>
+                <td width="132" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+                <td width="93" rowspan="2" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+            </tr>
+            <tr  class="pd5">
+                <td width="259" style="border:solid windowtext 1.0pt;">
+                    <p align="left">
+                        <i><span style="font-size:12px;">&nbsp;2</span></i><i><span style="font-size:12px;font-family:宋体;">地址：</span></i><i><span style="font-size:12px;"></span></i>
+                    </p>
+                </td>
+                <td width="84" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:12px;color:gray;"></span><span style="font-size:12px;">/<span style="color:gray;"></span></span>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:12px;color:gray;"></span><span style="font-size:12px;">/<span style="color:gray;"></span></span>
+                    </p>
+                </td>
+                <td width="132" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+            </tr>
+            <tr  class="pd5">
+                <td width="259" style="border:solid windowtext 1.0pt;">
+                    <p align="left">
+                        <i><span style="font-size:12px;">&nbsp;3</span></i><i><span style="font-size:12px;font-family:宋体;">公司：</span></i><i><span style="font-size:12px;"></span></i>
+                    </p>
+                </td>
+                <td width="84" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:12px;color:gray;"></span><span style="font-size:12px;">/<span style="color:gray;"></span></span>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:12px;color:gray;"></span><span style="font-size:12px;">/<span style="color:gray;"></span></span>
+                    </p>
+                </td>
+                <td width="132" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+                <td width="93" rowspan="2" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+            </tr>
+            <tr  class="pd5">
+                <td width="259" style="border:solid windowtext 1.0pt;">
+                    <p align="left">
+                        <i><span style="font-size:12px;">&nbsp;3</span></i><i><span style="font-size:12px;font-family:宋体;">地址：</span></i><i><span style="font-size:12px;"></span></i>
+                    </p>
+                </td>
+                <td width="84" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:12px;color:gray;"></span><span style="font-size:12px;">/<span style="color:gray;"></span><u></u></span>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:12px;color:gray;"></span><span style="font-size:12px;">/<span style="color:gray;"></span><u></u></span>
+                    </p>
+                </td>
+                <td width="132" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+            </tr>
+            <tr  class="pd5">
+                <td width="259" style="border:solid windowtext 1.0pt;">
+                    <p align="left">
+                        <i><span style="font-size:12px;">&nbsp;4</span></i><i><span style="font-size:12px;font-family:宋体;">公司：</span></i><i><span style="font-size:12px;"></span></i>
+                    </p>
+                </td>
+                <td width="84" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:12px;color:gray;"></span><span style="font-size:12px;">/<span style="color:gray;"></span><u></u></span>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:12px;color:gray;"></span><span style="font-size:12px;">/<span style="color:gray;"></span><u></u></span>
+                    </p>
+                </td>
+                <td width="132" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+                <td width="93" rowspan="2" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+            </tr>
+            <tr  class="pd5">
+                <td width="259" style="border:solid windowtext 1.0pt;">
+                    <p align="left">
+                        <i><span style="font-size:12px;">&nbsp;4</span></i><i><span style="font-size:12px;font-family:宋体;">地址：</span></i><i><span style="font-size:12px;"></span></i>
+                    </p>
+                </td>
+                <td width="84" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:12px;color:gray;"></span><span style="font-size:12px;">/<span style="color:gray;"></span><u></u></span>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:12px;color:gray;"></span><span style="font-size:12px;">/<span style="color:gray;"></span><u></u></span>
+                    </p>
+                </td>
+                <td width="132" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+            </tr>
+            <tr  class="pd5">
+                <td width="259" style="border:solid windowtext 1.0pt;">
+                    <p align="left">
+                        <i><span style="font-size:12px;">&nbsp;5</span></i><i><span style="font-size:12px;font-family:宋体;">公司：</span></i><i><span style="font-size:12px;"></span></i>
+                    </p>
+                </td>
+                <td width="84" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:12px;color:gray;"></span><span style="font-size:12px;">/<span style="color:gray;"></span><u></u></span>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:12px;color:gray;"></span><span style="font-size:12px;">/<span style="color:gray;"></span><u></u></span>
+                    </p>
+                </td>
+                <td width="132" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+                <td width="93" rowspan="2" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+            </tr>
+            <tr  class="pd5">
+                <td width="259" style="border:solid windowtext 1.0pt;">
+                    <p align="left">
+                        <i><span style="font-size:12px;">&nbsp;5</span></i><i><span style="font-size:12px;font-family:宋体;">地址：</span></i><i><span style="font-size:12px;"></span></i>
+                    </p>
+                </td>
+                <td width="84" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:12px;color:gray;"></span><span style="font-size:12px;">/<span style="color:gray;"></span><u></u></span>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <span style="font-size:12px;color:gray;"></span><span style="font-size:12px;">/<span style="color:gray;"></span></span>
+                    </p>
+                </td>
+                <td width="132" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+                <td width="72" style="border:solid windowtext 1.0pt;">
+                    <p align="center" style="text-align:center;">
+                        <u><span style="font-size:12px;">&nbsp;</span></u>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="712" colspan="6" style="border:solid windowtext 1.0pt;">
+                    <p align="left" style="height: 120px">
+                        <span style="font-size:12px;font-family:宋体;">奖项</span><span style="font-size:12px;">/</span><span style="font-size:12px;font-family:宋体;">特殊成就</span><span style="font-size:12px;"></span>
+                    </p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+      <div class="block">
+        <h5 class="h5-label">证明人</h5>
+        <p>请填两名或以上，最好为以住的上司，但不得填写亲属</p>
+        <div align="center">
+            <table border="1" cellspacing="0" cellpadding="0" style="">
+                <tbody>
+                <tr>
+                    <td width="102" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;font-family:宋体;">姓名</span><span style="font-size:9.0pt;"></span>
+                        </p>
+                    </td>
+                    <td width="264" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;font-family:宋体;">目前职位及其所在单位</span><span style="font-size:9.0pt;"></span>
+                        </p>
+                    </td>
+                    <td width="192" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span><span style="font-size:9.0pt;font-family:宋体;">他</span><span style="font-size:9.0pt;">/</span><span style="font-size:9.0pt;font-family:宋体;">她何时担任您的主管</span><span style="font-size:9.0pt;"></span>
+                        </p>
+                    </td>
+                    <td width="148" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;font-family:宋体;">目前的电话号码</span><span style="font-size:9.0pt;"></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="pd5">
+                    <td width="102" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                    <td width="264" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                    <td width="192" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                    <td width="148" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="pd5">
+                    <td width="102" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                    <td width="264" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                    <td width="192" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                    <td width="148" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="pd5">
+                    <td width="102" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                    <td width="264" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                    <td width="192" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                    <td width="148" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+      <div class="block">
+        <h5 class="h5-label">教育背景</h5>
+        <div align="center">
+            <table border="1" cellspacing="0" cellpadding="0" style="">
+                <tbody>
+                <tr>
+                    <td width="150" rowspan="2" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <b><span style="font-size:9.0pt;">&nbsp;</span></b>
+                        </p>
+                    </td>
+                    <td width="274" rowspan="2" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;font-family:宋体;">学校名称</span><span style="font-size:9.0pt;"></span>
+                        </p>
+                    </td>
+                    <td width="156" colspan="2" style="">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span><span style="font-size:9.0pt;font-family:宋体;">年度</span><span style="font-size:9.0pt;"></span>
+                        </p>
+                    </td>
+                    <td width="124" rowspan="2" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;font-family:宋体;">所得之学位</span><span style="font-size:9.0pt;">/</span><span style="font-size:9.0pt;font-family:宋体;">证书</span><span style="font-size:9.0pt;"></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="pd5">
+                    <td width="84" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span><span style="font-size:9.0pt;font-family:宋体;">由</span><span style="font-size:9.0pt;"></span>
+                        </p>
+                    </td>
+                    <td width="72" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span><span style="font-size:9.0pt;font-family:宋体;">至</span><span style="font-size:9.0pt;"></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="pd5">
+                    <td width="150" style="border:solid windowtext 1.0pt;">
+                        <p>
+                            <span style="font-size:9.0pt;font-family:宋体;">大学</span><span style="font-size:9.0pt;"> / </span><span style="font-size:9.0pt;font-family:宋体;">大专</span><span style="font-size:9.0pt;"></span>
+                        </p>
+                    </td>
+                    <td width="274" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                    <td width="84" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;color:gray;"></span><span style="font-size:9.0pt;">/<span style="color:gray;"></span></span>
+                        </p>
+                    </td>
+                    <td width="72" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;color:gray;"></span><span style="font-size:9.0pt;">/<span style="color:gray;"></span></span>
+                        </p>
+                    </td>
+                    <td width="124" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="pd5">
+                    <td width="150" style="border:solid windowtext 1.0pt;">
+                        <p>
+                            <span style="font-size:9.0pt;font-family:宋体;">高级中学</span><span style="font-size:9.0pt;"></span>
+                        </p>
+                    </td>
+                    <td width="274" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                    <td width="84" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;color:gray;"></span><span style="font-size:9.0pt;">/<span style="color:gray;"></span></span>
+                        </p>
+                    </td>
+                    <td width="72" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;color:gray;"></span><span style="font-size:9.0pt;">/<span style="color:gray;"></span></span>
+                        </p>
+                    </td>
+                    <td width="124" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="pd5">
+                    <td width="150" style="border:solid windowtext 1.0pt;">
+                        <p>
+                            <span style="font-size:9.0pt;font-family:宋体;">中级中学</span><span style="font-size:9.0pt;"></span>
+                        </p>
+                    </td>
+                    <td width="274" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                    <td width="84" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;color:gray;"></span><span style="font-size:9.0pt;">/<span style="color:gray;"></span></span>
+                        </p>
+                    </td>
+                    <td width="72" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;color:gray;"></span><span style="font-size:9.0pt;">/<span style="color:gray;"></span></span>
+                        </p>
+                    </td>
+                    <td width="124" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="pd5">
+                    <td width="150" style="border:solid windowtext 1.0pt;">
+                        <p>
+                            <span style="font-size:9.0pt;font-family:宋体;">其他</span><span style="font-size:9.0pt;"></span>
+                        </p>
+                    </td>
+                    <td width="274" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                    <td width="84" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;color:gray;"></span><span style="font-size:9.0pt;">/<span style="color:gray;"></span></span>
+                        </p>
+                    </td>
+                    <td width="72" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;color:gray;"></span><span style="font-size:9.0pt;">/<span style="color:gray;"></span></span>
+                        </p>
+                    </td>
+                    <td width="124" style="border:solid windowtext 1.0pt;">
+                        <p align="center" style="text-align:center;">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+        <div class="block">
+            <h5 class="h5-label">专业培训</h5>
+            <div align="center">
+                <table border="1" cellspacing="0" cellpadding="0" style="">
+                    <tbody>
+                    <tr>
+                        <td width="211" rowspan="2" style="border:solid windowtext 1.0pt;">
+                            <p align="center" style="text-align:center;">
+                                <span style="font-size:9.0pt;font-family:宋体;">培训名称</span><span style="font-size:9.0pt;"></span>
+                            </p>
+                        </td>
+                        <td width="167" rowspan="2" style="border:solid windowtext 1.0pt;">
+                            <p align="center" style="text-align:center;">
+                                <span style="font-size:9.0pt;font-family:宋体;">培训机构名称</span><span style="font-size:9.0pt;"></span>
+                            </p>
+                        </td>
+                        <td width="180" colspan="2" style="">
+                            <p align="center" style="text-align:center;">
+                                <span style="font-size:9.0pt;font-family:宋体;">年度</span><span style="font-size:9.0pt;"></span>
+                            </p>
+                        </td>
+                        <td width="148" rowspan="2" style="border:solid windowtext 1.0pt;">
+                            <p align="center" style="text-align:center;">
+                                <span style="font-size:9.0pt;font-family:宋体;">所得之学位</span><span style="font-size:9.0pt;">/</span><span style="font-size:9.0pt;font-family:宋体;">证书</span><span style="font-size:9.0pt;"></span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="84" style="border:solid windowtext 1.0pt;">
+                            <p align="center" style="text-align:center;">
+                                <span style="font-size:9.0pt;">&nbsp;From </span><span style="font-size:9.0pt;font-family:宋体;">由</span><span style="font-size:9.0pt;"></span>
+                            </p>
+                        </td>
+                        <td width="96" style="border:solid windowtext 1.0pt;">
+                            <p align="center" style="text-align:center;">
+                                <span style="font-size:9.0pt;">To </span><span style="font-size:9.0pt;font-family:宋体;">至</span><span style="font-size:9.0pt;"></span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="pd5">
+                        <td width="211" style="border:solid windowtext 1.0pt;">
+                            <p align="center" style="text-align:center;">
+                                <span style="font-size:9.0pt;">&nbsp;</span>
+                            </p>
+                        </td>
+                        <td width="167" style="border:solid windowtext 1.0pt;">
+                            <p align="center" style="text-align:center;">
+                                <span style="font-size:9.0pt;">&nbsp;</span>
+                            </p>
+                        </td>
+                        <td width="84" style="border:solid windowtext 1.0pt;">
+                            <p align="center" style="text-align:center;">
+                                <span style="font-size:9.0pt;color:gray;"></span><span style="font-size:9.0pt;">/<span style="color:gray;"></span></span>
+                            </p>
+                        </td>
+                        <td width="96" style="border:solid windowtext 1.0pt;">
+                            <p align="center" style="text-align:center;">
+                                <span style="font-size:9.0pt;color:gray;"></span><span style="font-size:9.0pt;">/<span style="color:gray;"></span></span>
+                            </p>
+                        </td>
+                        <td width="148" style="border:solid windowtext 1.0pt;">
+                            <p align="center" style="text-align:center;">
+                                <span style="font-size:9.0pt;">&nbsp;</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="pd5">
+                        <td width="211" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:9.0pt;">&nbsp;</span>
+                            </p>
+                        </td>
+                        <td width="167" style="border:solid windowtext 1.0pt;">
+                            <p align="center" style="text-align:center;">
+                                <span style="font-size:9.0pt;">&nbsp;</span>
+                            </p>
+                        </td>
+                        <td width="84" style="border:solid windowtext 1.0pt;">
+                            <p align="center" style="text-align:center;">
+                                <span style="font-size:9.0pt;color:gray;"></span><span style="font-size:9.0pt;">/<span style="color:gray;"></span></span>
+                            </p>
+                        </td>
+                        <td width="96" style="border:solid windowtext 1.0pt;">
+                            <p align="center" style="text-align:center;">
+                                <span style="font-size:9.0pt;color:gray;"></span><span style="font-size:9.0pt;">/<span style="color:gray;"></span></span>
+                            </p>
+                        </td>
+                        <td width="148" style="border:solid windowtext 1.0pt;">
+                            <p align="center" style="text-align:center;">
+                                <span style="font-size:9.0pt;">&nbsp;</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="pd5">
+                        <td width="211" style="border:solid windowtext 1.0pt;">
+                            <p>
+                                <span style="font-size:9.0pt;">&nbsp;</span>
+                            </p>
+                        </td>
+                        <td width="167" style="border:solid windowtext 1.0pt;">
+                            <p align="center" style="text-align:center;">
+                                <span style="font-size:9.0pt;">&nbsp;</span>
+                            </p>
+                        </td>
+                        <td width="84" style="border:solid windowtext 1.0pt;">
+                            <p align="center" style="text-align:center;">
+                                <span style="font-size:9.0pt;color:gray;"></span><span style="font-size:9.0pt;">/<span style="color:gray;"></span></span>
+                            </p>
+                        </td>
+                        <td width="96" style="border:solid windowtext 1.0pt;">
+                            <p align="center" style="text-align:center;">
+                                <span style="font-size:9.0pt;color:gray;"></span><span style="font-size:9.0pt;">/<span style="color:gray;"></span></span>
+                            </p>
+                        </td>
+                        <td width="148" style="border:solid windowtext 1.0pt;">
+                            <p align="center" style="text-align:center;">
+                                <span style="font-size:9.0pt;">&nbsp;</span>
+                            </p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="block">
+            <h5 class="h5-label">语言能力</h5>
+            <div class="split-div">
+                <div class="s-left">
+                    <table border="1" cellspacing="0" cellpadding="0" style="">
+                        <tbody>
+                        <tr>
+                            <td width="91" rowspan="2" valign="top" style="border:solid windowtext 1.0pt;">
+                                <p>
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="144" colspan="3" style="border:solid windowtext 1.0pt;">
+                                <p align="center" style="text-align:center;">
+                                    <span style="font-size:9.0pt;">&nbsp;</span><span style="font-size:9.0pt;font-family:宋体;">讲</span><span style="font-size:9.0pt;"></span>
+                                </p>
+                            </td>
+                            <td width="144" colspan="3" style="border:solid windowtext 1.0pt;">
+                                <p align="center" style="text-align:center;">
+                                    <span style="font-size:9.0pt;">&nbsp;</span><span style="font-size:9.0pt;font-family:宋体;">阅读</span><span style="font-size:9.0pt;"></span>
+                                </p>
+                            </td>
+                            <td width="144" colspan="3" style="border:solid windowtext 1.0pt;">
+                                <p align="center" style="text-align:center;">
+                                    <span style="font-size:9.0pt;font-family:宋体;">写</span><span style="font-size:9.0pt;"></span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;font-family:宋体;">流利</span><span style="font-size:9.0pt;"></span>
+                                </p>
+                            </td>
+                            <td width="48" valign="top" style="border:solid windowtext 1.0pt;">
+                                <p align="center" style="text-align:center;">
+                                    <span style="font-size:9.0pt;font-family:宋体;">普通</span><span style="font-size:9.0pt;"></span>
+                                </p>
+                            </td>
+                            <td width="48" valign="top" style="border:solid windowtext 1.0pt;">
+                                <p align="center" style="text-align:center;">
+                                    <span style="font-size:9.0pt;font-family:宋体;">略懂</span><span style="font-size:9.0pt;"></span>
+                                </p>
+                            </td>
+                            <td width="48" valign="top" style="border:solid windowtext 1.0pt;">
+                                <p align="center" style="text-align:center;">
+                                    <span style="font-size:9.0pt;font-family:宋体;">流利</span><span style="font-size:9.0pt;"></span>
+                                </p>
+                            </td>
+                            <td width="48" valign="top" style="border:solid windowtext 1.0pt;">
+                                <p align="center" style="text-align:center;">
+                                    <span style="font-size:9.0pt;font-family:宋体;">普通</span><span style="font-size:9.0pt;"></span>
+                                </p>
+                            </td>
+                            <td width="48" valign="top" style="border:solid windowtext 1.0pt;">
+                                <p align="center" style="text-align:center;">
+                                    <span style="font-size:9.0pt;font-family:宋体;">略懂</span><span style="font-size:9.0pt;"></span>
+                                </p>
+                            </td>
+                            <td width="48" valign="top" style="border:solid windowtext 1.0pt;">
+                                <p align="center" style="text-align:center;">
+                                    <span style="font-size:9.0pt;font-family:宋体;">流利</span><span style="font-size:9.0pt;"></span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="center" style="text-align:center;">
+                                    <span style="font-size:9.0pt;font-family:宋体;">普通</span><span style="font-size:9.0pt;"></span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="center" style="text-align:center;">
+                                    <span style="font-size:9.0pt;font-family:宋体;">略懂</span><span style="font-size:9.0pt;"></span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="91" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;font-family:宋体;">英语</span><span style="font-size:9.0pt;"></span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="91" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size:9.0pt;font-family:宋体;">普通话</span><span style="font-size:9.0pt;"></span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="91" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;font-family:宋体;">其他</span><span style="font-size:9.0pt;"></span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">____________</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                            <td width="48" style="border:solid windowtext 1.0pt;">
+                                <p align="left">
+                                    <span style="font-size:9.0pt;">&nbsp;</span>
+                                </p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="s-left" style="margin-left: 20px">
+                    <p>
+                        <b><span style="font-size:9.0pt;font-family:宋体;">英语专业资格证书</span></b><b><span style="font-size:9.0pt;"></span></b>
+                    </p>
+                    <p>
+                        <span style="font-size:9.0pt;">&nbsp;</span>
+                    </p>
+                    <p>
+                        <span style="font-size:9.0pt;font-family:Wingdings;">q</span><span style="font-size:9.0pt;"> CET 4 </span><span style="font-size:9.0pt;font-family:宋体;">四级</span><span style="font-size:9.0pt;"></span>
+                    </p>
+                    <p>
+                        <span style="font-size:9.0pt;font-family:Wingdings;">q</span><span style="font-size:9.0pt;"> CET 6 </span><span style="font-size:9.0pt;font-family:宋体;">六级</span><span style="font-size:9.0pt;"></span>
+                    </p>
+                    <p>
+                        <span style="font-size:9.0pt;font-family:Wingdings;">q</span><span style="font-size:9.0pt;"> Professional 8 </span><span style="font-size:9.0pt;font-family:宋体;">专业八级</span><span style="font-size:9.0pt;"></span>
+                    </p>
+                    <p>
+                        <span style="font-size:9.0pt;font-family:Wingdings;">q</span><span style="font-size:9.0pt;"> Others </span><span style="font-size:9.0pt;font-family:宋体;">其他语言证书</span><span style="font-size:9.0pt;"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <h5 class="h5-label">特殊技能</h5>
+            <table border="1" cellspacing="0" cellpadding="0" style="border:none;">
+                <tbody>
+                <tr class="pd5">
+                    <td width="295" style="border:solid windowtext 1.0pt;">
+                        <p align="left">
+                            <span style="font-size:9.0pt;font-family:宋体;">财务专业证书</span><span style="font-size:9.0pt;">__________________ </span><span style="font-size:9.0pt;font-family:宋体;">日期</span><span style="font-size:9.0pt;">___________</span>
+                        </p>
+                    </td>
+                    <td width="417" style="border:solid windowtext 1.0pt;">
+                        <p align="left">
+                            <span style="font-size:9.0pt;font-family:宋体;">工程专业资格证书</span><span style="font-size:9.0pt;">_________________________________ </span><span style="font-size:9.0pt;font-family:宋体;">日期</span><span style="font-size:9.0pt;">___________</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="pd5">
+                    <td width="295" style="border:solid windowtext 1.0pt;">
+                        <p align="left">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                        <p align="left">
+                            <span style="font-size:9.0pt;font-family:宋体;">其他证书</span><span style="font-size:9.0pt;">__________________&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:9.0pt;font-family:宋体;">日期</span><span style="font-size:9.0pt;">___________</span>
+                        </p>
+                    </td>
+                    <td width="417" style="border:solid windowtext 1.0pt;">
+                        <p align="left">
+                            <span style="font-size:9.0pt;font-family:宋体;">操作熟练的电脑技能</span><span style="font-size:9.0pt;"></span>
+                        </p>
+                        <p align="left">
+                            <span style="font-size:9.0pt;font-family:Wingdings;">q</span><span style="font-size:9.0pt;"> Word </span><span style="font-size:9.0pt;font-family:Wingdings;">q</span><span style="font-size:9.0pt;"> Excel </span><span style="font-size:9.0pt;font-family:Wingdings;">q</span><span style="font-size:9.0pt;"> Power Point </span><span style="font-size:9.0pt;font-family:Wingdings;">q</span><span style="font-size:9.0pt;"> Access </span><span style="font-size:9.0pt;font-family:Wingdings;">q</span><span style="font-size:9.0pt;"> Fidelio </span><span style="font-size:9.0pt;font-family:Wingdings;">q</span><span style="font-size:9.0pt;"> Others _____________</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="pd5">
+                    <td width="295" style="border:solid windowtext 1.0pt;">
+                        <p align="left">
+                            <span style="font-size:9.0pt;">&nbsp;</span><span style="font-size:9.0pt;font-family:宋体;">驾驶执照</span><span style="font-size:9.0pt;"></span>
+                        </p>
+                        <p align="left">
+                            <span style="font-size:9.0pt;font-family:Wingdings;">q</span><span style="font-size:9.0pt;">&nbsp; A</span><span style="font-size:9.0pt;font-family:宋体;">照</span><span style="font-size:9.0pt;"> </span><span style="font-size:9.0pt;font-family:Wingdings;">q </span><span style="font-size:9.0pt;">&nbsp;B</span><span style="font-size:9.0pt;font-family:宋体;">照</span><span style="font-size:9.0pt;"> </span><span style="font-size:9.0pt;font-family:Wingdings;">q</span><span style="font-size:9.0pt;">&nbsp; C</span><span style="font-size:9.0pt;font-family:宋体;">照</span><span style="font-size:9.0pt;">&nbsp; </span>
+                        </p>
+                        <p align="left">
+                            <span style="font-size:9.0pt;font-family:宋体;">发证日期</span><span style="font-size:9.0pt;"> ________________</span>
+                        </p>
+                    </td>
+                    <td width="417" style="border:solid windowtext 1.0pt;">
+                        <p align="left">
+                            <span style="font-size:9.0pt;">&nbsp;</span>
+                        </p>
+                        <p align="left">
+                            <span style="font-size:9.0pt;font-family:宋体;">技术证书</span><u><span style="font-size:9.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></u><span style="font-size:9.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size:9.0pt;font-family:宋体;">发证日期</span><span style="font-size:9.0pt;">________________</span>
+                        </p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="block to-page">
+            <h6 style=" text-align: center; margin-bottom: 15px">
+                <label style=" border-bottom: 1px solid #000; display: inline-block">声明</label>
+            </h6>
+            <p style="line-height: 150%; font-family: '楷体_GB2312">本人特此申请工作。本人保证此表格内以及任何附件所提供的所有信息是准确和完整的。本人明白如在此表内提供了任何虚假信息或遗漏任何重要信息
+                都可能造成对本人申请的拒绝，如在录用后，本人被发现应聘过程中提供任何虚假信息或隐瞒任何重要信息，都将被终止雇佣关系。本人理解有效
+                的体格检查报告和合格的无犯罪记录以及背景审核为本人获正式雇佣之前提条件。本人并授权于现入职的单位做出一切有关本人之查询。本人也理解
+                在面试过程中所有的应聘者都必须接受面试及可能须进行相关资格考核测试。本人明白先入职的单位对于本人的申请不保证予以聘用。
+            </p>
+            <div class="split-div">
+                <div class="s-left" style="border-top: 1px solid #000; width: 45%; text-indent: 40px; padding-top: 10px; margin-top: 40px">
+                    申请人签名
+                </div>
+                <div class="s-right" style="border-top: 1px solid #000; width: 45%; text-indent: 40px; padding-top: 10px; margin-top: 40px">
+                    日期
+                </div>
+            </div>
+        </div>
+    </div>
