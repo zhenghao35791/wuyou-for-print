@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>人事文档</title>
+    <link rel="stylesheet" href="input-print.css">
+</head>
+<body>
+<div class="book">
+    <div class="page">
+        <div class="subpage">
+            <div class="page-header">
+                <img src="../images/1.png" class="header-img-1">
+                <div class="header-right">
+                    <img src="../images/2.jpg" class="header-img-2">
+                    <p>www.51qbwy.com</p>
+                </div>
+            </div>
+            <br>
+            <h2>全日制劳动合同书</h2>
+            <br>
+            <table border="1" cellspacing="0" cellpadding="0" width="668" style="border:none;">
+                <tbody>
+                <tr>
+                    <td colspan="6" class="td-header">
+                        <h4>甲方（用人单位）</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        用人单位名称
+                    </td>
+                    <td>
+                        $!{insurant.company.companyName}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        用人单位住所
+                    </td>
+                    <td>
+                        $!{insurant.company.companyAddress}
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="2">
+                        工商登记
+                    </td>
+                    <td colspan="1">
+                        注册类型
+                    </td>
+                    <td>
+                        <span><input type="text" class="input2" size="55"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1">
+                        法定代表人或负责人
+                    </td>
+                    <td>
+                        $!{insurant.company.legalPerson}
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <table border="1" cellspacing="0" cellpadding="0" width="668" style="border:none;">
+                <tbody>
+                <tr>
+                    <td colspan="6" class="td-header">
+                        <h4>乙方（劳动者）</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1">
+                        姓 名
+                    </td>
+                    <td colspan="1">
+                        $!insurant.insurantName
+                    </td>
+                    <td colspan="1">
+                        性 别
+                    </td>
+                    <td colspan="1">
+                        #if ($!insurant.sexFlag) 女 #else 男 #end
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1">
+                        出生年月
+                    </td>
+                    <td colspan="1"><!--
+                        $!dateUtil.formatDateShort($!insurant.birthDate) -->
+                    </td>
+                    <td colspan="1">
+                        文化程度
+                    </td>
+                    <td colspan="1">
+                        <span><input type="text" class="input2" size="25"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1">
+                        户籍所在地址
+                    </td>
+                    <td colspan="3" class="noindent">
+                        <span><textarea type="text" rows="1"></textarea></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1">
+                        现居住（通讯地址）
+                    </td>
+                    <td colspan="3" class="noindent">
+                        <span><textarea type="text" rows="1"></textarea></span>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td colspan="1">
+                        居民身份证号码
+                    </td>
+                    <td colspan="3">
+                        $!insurant.idCard
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1">
+                        家庭联系方式（电话）
+                    </td>
+                    <td colspan="1">
+                        $!insurant.insurantContact
+                    </td>
+                    <td colspan="1">
+                        就业登记证号码
+                    </td>
+                    <td colspan="1">
+                        <span><input type="text" class="input2" size="25"></span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <br>
+            <div class="page-footer">
+                <div class="footer-left">
+                    <p>苏州地址：苏州工业园区华池街88号晋合广场2号楼11层</p>
+                    <p>联系方式：17851499302（星期一至五：5*8小时）</p>
+                </div>
+                <div class="footer-right">
+                    <p>上海地址：上海市安亭镇新源路155弄16号713室</p>
+                    <p>邮箱地址：yuanjian@51qbwy.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="subpage">
+            <div class="page-header">
+                <img src="../images/1.png" class="header-img-1">
+                <div class="header-right">
+                    <img src="../images/2.jpg" class="header-img-2">
+                    <p>www.51qbwy.com</p>
+                </div>
+            </div>
+            <br>
+            <h2>昆山市劳动和社会保障局制</h2>
+            <br>
+            <div class="page5">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp; 甲、乙双方根据《中华人民共和国劳动合同法》和有关法律、法规规定，在平等自愿、公平公正、协商一致、诚实信用的基础上，签订本合同。</p>
+                <p class="page5_p_header">&nbsp;&nbsp;一、劳动合同期限</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;甲乙双方约定按下列<span><input type="text" class="input1" size="2"></span>种方式确定“劳动合同期限”：
+                </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;A、有固定期限的劳动合同自<span><input type="text" class="input1"
+                                                                     size="4"></span>年<span><input
+                        type="text" class="input1" size="4"></span>月<span><input type="text" class="input1"
+                                                                                 size="4"></span>日起至<span><input
+                        type="text" class="input1" size="4"></span>年<span><input type="text" class="input1"
+                                                                                 size="4"></span>月<span><input
+                        type="text" class="input1" size="4"></span>日止。并约定试用期自<span><input type="text" class="input1"
+                                                                                          size="4"></span>年<span><input
+                        type="text" class="input1" size="4"></span>月<span><input type="text" class="input1"
+                                                                                 size="4"></span>日起至<span><input
+                        type="text" class="input1" size="4"></span>年<span><input type="text" class="input1"
+                                                                                 size="4"></span>月<span><input
+                        type="text" class="input1" size="4"></span>日止。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;B、无固定期限的劳动合同自<span><input type="text" class="input1"
+                                                                     size="4"></span>年<span><input type="text"
+                                                                                                   class="input1"
+                                                                                                   size="4"></span>月<span><input
+                        type="text" class="input1" size="4"></span>日起。并约定试用期自<span><input type="text" class="input1"
+                                                                                          size="4"></span>年<span><input
+                        type="text" class="input1" size="4"></span>月<span><input type="text" class="input1"
+                                                                                 size="4"></span>日起至<span><input
+                        type="text" class="input1" size="4"></span>年<span><input type="text" class="input1"
+                                                                                 size="4"></span>月<span><input
+                        type="text" class="input1" size="4"></span>日止。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;C、以完成<span><input type="text" class="input1"
+                                                             size="16"></span>工作任务为劳动合同期限，自<span><input type="text"
+                                                                                                        class="input1"
+                                                                                                        size="4"></span>年<span><input
+                        type="text" class="input1" size="4"></span>月<span><input type="text" class="input1"
+                                                                                 size="4"></span>日起至完成本项工作任务之日即为劳动合同终止日。
+                </p>
+                <p class="page5_p_header">&nbsp;&nbsp;&nbsp;&nbsp;二、工作地点、内容</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;(一）乙方根据甲方要求，经过协商，从事<span><input type="text" class="input1" size="16"></span>工作，双方对劳动合同履行地约定为<span><input
+                        type="text" class="input1" size="16"></span>（可能跨地区安排人员的合同履行地约定为<span><input type="text"
+                                                                                                    class="input1"
+                                                                                                    size="16"></span>）。甲方根据工作需要，按照合理诚信的原则，可依法变动乙方的工作岗位。
+                </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;(二）甲方安排乙方所从事的工作内容及要求，应当符合国家法律法规规定的劳动基准和甲方依法制订的并已公示的规章制度。乙方应当按照甲方安排的工作内容及要求履行劳动义务。</p>
+                <p class="page5_p_header">&nbsp;&nbsp;&nbsp;&nbsp;三、工作时间和休息休假</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;（一）甲乙经协商确认执行<span><input type="text" class="input1" size="2"></span>条款，</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;A、每周工作<span><input type="text" class="input1"
+                                                              size="4"></span>日，每天工作<span><input type="text"
+                                                                                                 class="input1"
+                                                                                                 size="4"></span>小时。</p>
+            </div>
+
+            <br>
+            <div class="page-footer">
+                <div class="footer-left">
+                    <p>苏州地址：苏州工业园区华池街88号晋合广场2号楼11层</p>
+                    <p>联系方式：17851499302（星期一至五：5*8小时）</p>
+                </div>
+                <div class="footer-right">
+                    <p>上海地址：上海市安亭镇新源路155弄16号713室</p>
+                    <p>邮箱地址：yuanjian@51qbwy.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="subpage">
+            <div class="page-header">
+                <img src="../images/1.png" class="header-img-1">
+                <div class="header-right">
+                    <img src="../images/2.jpg" class="header-img-2">
+                    <p>www.51qbwy.com</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;B、甲方安排乙方的<span><input type="text" class="input1" size="8"></span>工作岗位，属于不定时工作制，双方依法执行不定时工作制规定。
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;C、甲方安排乙方的<span><input type="text" class="input1" size="8"></span>工作岗位，属于综合计算工时制，双方依法执行综合计算工时工作制规定。
+            </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（二）甲方严格遵守法定的工作时间，控制加班加点，保证乙方的休息与身心健康，甲方因工作需要必须安排乙方加班加点的，应与工会和乙方协商同意，依法给予乙方补休或支付加班加点工资。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（三）甲方依法为乙方安排带薪年休假。</p>
+            <p class="page5_p_header">&nbsp;&nbsp;&nbsp;&nbsp;四、劳动保护、劳动条件和职业病危害防护</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（一）甲方对可能产生职业病危害的岗位，应当向乙方履行如实告知的义务，并对乙方进行劳动安全卫生教育，防止劳动过程中的伤亡事故，减少职业病危害。乙方现行岗位是否可能产生职业病危害的岗位（是<span><input
+                    type="checkbox"></span>否<span><input
+                    type="checkbox"></span>）可能存在的危害为：<span><input type="text" class="input1" size="20"></span>；甲方所采取的措施、待遇：<span><input
+                    type="text" class="input1" size="20"></span>。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（二）甲方必须为乙方提供符合国家规定的劳动安全卫生条件和必要的劳动防护用品，安排乙方从事有职业危害作业的，应定期为乙方进行健康检查，并在乙方离职前进行职业健康检查。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（三）乙方在劳动过程中必须严格遵守安全操作规程。乙方对甲方管理人员违章指挥、强令冒险作业，有权拒绝执行。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（四）甲方按照国家关于女职工、未成年工的特殊保护规定，对乙方提供保护。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（五）乙方患病或非因工负伤的，甲方按照国家关于医疗期的规定执行。</p>
+            <p class="page5_p_header">&nbsp;&nbsp;&nbsp;&nbsp;五、劳动报酬</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;甲方应当每月至少一次以货币形式支付乙方工资，不得克扣或者无故拖欠乙方的工资。乙方在法定工作时间或依法签订劳动合同约定的工作时间内提供了正常劳动，甲方向乙方支付的工资不得低于当地最低工资标准。</p>
+
+            <br>
+            <div class="page-footer">
+                <div class="footer-left">
+                    <p>苏州地址：苏州工业园区华池街88号晋合广场2号楼11层</p>
+                    <p>联系方式：17851499302（星期一至五：5*8小时）</p>
+                </div>
+                <div class="footer-right">
+                    <p>上海地址：上海市安亭镇新源路155弄16号713室</p>
+                    <p>邮箱地址：yuanjian@51qbwy.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="subpage">
+            <div class="page-header">
+                <img src="../images/1.png" class="header-img-1">
+                <div class="header-right">
+                    <img src="../images/2.jpg" class="header-img-2">
+                    <p>www.51qbwy.com</p>
+                </div>
+            </div>
+            <br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（一）甲方承诺每月<span><input type="text" class="input1" size="4"></span>日为发薪日。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（二）乙方在试用期内的工资为每月<span><input type="text" class="input1" size="8"></span>元。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（三）经甲乙双方协商一致，实行计时工资制，乙方的正常工作时间工资报酬为 <span><input type="text" class="input1" value="当地最低工资标准" disabled></span>元/月。乙方加班工资的计发基数为，双方约定为： <span><input type="text" class="input1" value="当地最低工资标准" disabled></span>。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（四）甲方实行计件工资制，确定乙方的劳动定额应当是本单位同岗位百分之九十以上劳动者在法定工作时间内能够完成的，乙方在法定工作时间内按质完成甲方定额，甲方按照约定的定额和计件单价，根据乙方的业绩，按时足额支付乙方的工资报酬。乙方加班工资的计发基数为，双方约定为：<span><input
+                    type="text" class="input1" size="20"></span>。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（五）甲方根据企业经营效益、当地政府公布的工资指导线、工资指导价位等，合理提高乙方工资。乙方的工资增长办法按照<span><input
+                    type="text" class="input1" size="20"></span>（工资集体协商协议、内部工资正常增长办法）确定。</p>
+            <p style="font-weight: bold">&nbsp;&nbsp;&nbsp;&nbsp;（六）<span style="text-decoration: underline">基本工资按照昆山市最低工资标准调整5天8小时工资。</span></p>
+            <p class="page5_p_header">&nbsp;&nbsp;&nbsp;&nbsp;六、社会保险</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（一）双方依法参加社会保险，按时缴纳各项社会保险费，其中依法应由乙方缴纳的部分，由甲方从乙方工资报酬中代扣代缴。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（二）甲方应当依法为乙方缴纳各项社会保险费，并每年向职工公布本单位全年社会保险费缴纳情况，接受职工监督。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（三）如乙方发生工伤事故，甲方应负责及时救治，或提供可能的帮助，并在规定时间内，向劳动保障行政部门提出工伤认定申请，为乙方依法办理劳动能力鉴定，并为享受工伤医疗待遇履行必要的义务。</p>
+            <p class="page5_p_header">&nbsp;&nbsp;&nbsp;&nbsp;七、双方协商一致，约定下列<span><input type="text" class="input1" size="2"></span>条款：</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;A、乙方工作涉及甲方商业秘密和与知识产权相关的保密事项的，甲方可以事前与乙方依法协商约定保守商业秘密或竞业限制的事项，并签订保守商业秘密协议或竞业限制协议。</p>
+
+            <br>
+            <div class="page-footer">
+                <div class="footer-left">
+                    <p>苏州地址：苏州工业园区华池街88号晋合广场2号楼11层</p>
+                    <p>联系方式：17851499302（星期一至五：5*8小时）</p>
+                </div>
+                <div class="footer-right">
+                    <p>上海地址：上海市安亭镇新源路155弄16号713室</p>
+                    <p>邮箱地址：yuanjian@51qbwy.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="subpage">
+            <div class="page-header">
+                <img src="../images/1.png" class="header-img-1">
+                <div class="header-right">
+                    <img src="../images/2.jpg" class="header-img-2">
+                    <p>www.51qbwy.com</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;B、由甲方出资对乙方进行专业技术培训，并要求乙方履行服务期的，应当事前征得乙方同意，并签订协议，明确双方权利义务</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;C、双方对补充养老保险（企业年金）和补充医疗保险，约定为：  <span style="text-decoration: underline;font-weight: bold">由甲方为乙方交纳社会保险，基数按照最低缴费基数标准计算，个人部分由乙方自理，甲方代扣代缴</span>。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;D、甲乙双方需要约定的其它事项：<span><input type="text" class="input2" size="50"></span></p>
+            <p class="page5_p_header">&nbsp;&nbsp;&nbsp;&nbsp;八、劳动争议处理</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（一）劳动合同依法订立，即具有法律约束力，双方应当全面履行，并严格执行依法执行劳动合同的变更、解除、终止、续订和给付经济补偿的规定。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（二）甲乙双方因履行本合同发生劳动争议，可以协商解决。不愿协商或者协商不成的，可以向本单位劳动争议调解委员会申请调解；调解不成的，可以向劳动争议仲裁委员会申请仲裁。甲乙双方也可以直接向劳动争议仲裁委员会申请仲裁。提出仲裁要求的一方应当自劳动争议发生之日起六十日内向劳动争议仲裁委员会提出书面申请。对仲裁裁决不服的，可以自收到仲裁裁决书之日起十五日内向人民法院提起诉讼</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（三）甲方违反劳动法律、法规和规章，损害乙方合法权益的，乙方有权向劳动保障行政部门和有关部门投诉。</p>
+            <p class="page5_p_header">&nbsp;&nbsp;&nbsp;&nbsp;九、其他事项</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（一）劳动合同期内，乙方户籍所在地址、现居住（通讯）地址、联系方式等发生变化，应当及时告知甲方，以便于联系。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（二） 本合同未尽事宜，均按国家有关规定执行，国家没有规定的，通过双方平等协商解决。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（三）本合同不得涂改。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（四）本合同如需同时用中文、外文书写，内容不一致的，以中文文本为准。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;（五）本合同一式两份，具有同等法律效力，甲乙双方各执一份。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <br>
+            <div class="page-footer">
+                <div class="footer-left">
+                    <p>苏州地址：苏州工业园区华池街88号晋合广场2号楼11层</p>
+                    <p>联系方式：17851499302（星期一至五：5*8小时）</p>
+                </div>
+                <div class="footer-right">
+                    <p>上海地址：上海市安亭镇新源路155弄16号713室</p>
+                    <p>邮箱地址：yuanjian@51qbwy.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="subpage">
+            <div class="page-header">
+                <img src="../images/1.png" class="header-img-1">
+                <div class="header-right">
+                    <img src="../images/2.jpg" class="header-img-2">
+                    <p>www.51qbwy.com</p>
+                </div>
+            </div>
+            <br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+            <br>
+            <div class="page-footer">
+                <div class="footer-left">
+                    <p>苏州地址：苏州工业园区华池街88号晋合广场2号楼11层</p>
+                    <p>联系方式：17851499302（星期一至五：5*8小时）</p>
+                </div>
+                <div class="footer-right">
+                    <p>上海地址：上海市安亭镇新源路155弄16号713室</p>
+                    <p>邮箱地址：yuanjian@51qbwy.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
