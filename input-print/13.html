@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>人事文档</title>
+    <link rel="stylesheet" href="input-print.css">
+</head>
+<body>
+<div class="book page-line">
+    <div class="page">
+        <div class="subpage">
+            <div class="page-header">
+                <img src="../images/1.png" class="header-img-1">
+                <div class="header-right">
+                    <img src="../images/2.jpg" class="header-img-2">
+                    <p>www.51qbwy.com</p>
+                </div>
+            </div>
+            <br>
+            <h2>《职位告知书》</h2>
+            <h4 style="text-align: right">编号：<span><input type="text" class="input1" size="16"></span></h4>
+            <div style="text-align: left;padding-left: 20%">
+                <p>告知人：<input type="text" class="input2" value="$!{insurant.company.companyName}" disabled></p>
+                <p>被告知人：<input type="text" class="input2" value="$!{insurant.insurantName}" disabled></p>
+                <p>告知时间：
+                    <input type="text" class="input2" size="4">年
+                    <input type="text" class="input2" size="2">月
+                    <input type="text" class="input2" size="2">日
+                </p>
+            </div>
+            <br>
+            <div style="text-align: left;padding-left: 20%">
+                <p>告知内容：</p>
+                <p>1、工作内容： <span><input type="text" class="input2" size="20"></span></p>
+                <p>2、工作条件： <span><input type="text" class="input2" size="20"></span></p>
+                <p>3、工作地点： <span><input type="text" class="input2" size="20"></span></p>
+                <p>4、职业危害： <span><input type="text" class="input2" size="20"></span></p>
+                <p>5、安全生产状况：  <span><input type="text" class="input2" size="20"></span></p>
+                <p>6、劳动报酬： <span><input type="text" class="input2" size="20"></span></p>
+                <p>7、其他： <span><input type="text" class="input2" size="20"></span></p>
+            </div>
+            <br>
+
+            <div class="page-footer">
+                <div class="footer-left">
+                    <p>苏州地址：苏州工业园区华池街88号晋合广场2号楼11层</p>
+                    <p>联系方式：17851499302（星期一至五：5*8小时）</p>
+                </div>
+                <div class="footer-right">
+                    <p>上海地址：上海市安亭镇新源路155弄16号713室</p>
+                    <p>邮箱地址：yuanjian@51qbwy.com</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

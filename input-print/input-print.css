@@ -189,3 +189,14 @@ table p, table li{
     line-height: 150% !important;
     color: #555;
 }
+.normal-second-p{
+    line-height: 150% !important;
+    font-size: 11pt!important;
+}
+#page9 p{
+    line-height: 150%!important;
+}
+#page10_form label{
+    display: block;
+    margin-left: 25px;
+}
